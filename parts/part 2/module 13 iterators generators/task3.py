@@ -13,5 +13,5 @@ def get_py_files_lines_count_in_dir(dir_path: str) -> Iterator[str, int]:
         yield abs_path, get_py_file_lines_count(abs_path)
 
 
-for file_path, count in get_py_files_lines_count_in_dir('..\\module13'):
+for file_path, count in get_py_files_lines_count_in_dir('tests'):
     print(f'{file_path}: {count}')
